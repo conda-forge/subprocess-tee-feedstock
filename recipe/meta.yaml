@@ -1,5 +1,5 @@
 {% set name = "subprocess-tee" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/subprocess-tee-{{ version }}.tar.gz
-  sha256: f788b60a27b1b3753ba0eb513f8aa227fbd03eb4d3d3c12d210e73e5d63b66c2
+  sha256: cfca5e6db7aeca1b1d061fe3fca1145f467bd35aed8c3eac9e8218c011500683
 
 build:
   number: 0
