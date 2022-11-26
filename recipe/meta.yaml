@@ -1,5 +1,5 @@
 {% set name = "subprocess-tee" %}
-{% set version = "0.3.5" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/subprocess-tee-{{ version }}.tar.gz
-  sha256: ff5cced589a4b8ac973276ca1ba21bb6e3de600cde11a69947ff51f696efd577
+  sha256: 7ea885ff32cdb2b2d3b2a6c464492f2ee1ebbf324e50598d75de4f6f3ea0f149
 
 build:
   number: 0
@@ -18,16 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools_scm
-    - setuptools_scm_git_archive >=1.0
   run:
-    - python >=3.6
+    - python >=3.8
 
 test:
   imports:
     - subprocess_tee
-    - subprocess_tee.test
   commands:
     - pip check
   requires:
